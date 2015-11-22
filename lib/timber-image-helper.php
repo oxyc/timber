@@ -337,7 +337,7 @@ class TimberImageHelper {
 			}
 		} else {
 			if (!$result['absolute']) {
-				$tmp = home_url().$tmp;
+				$tmp = site_url().$tmp;
 			}
 			if (0 === strpos($tmp, $upload_dir['baseurl'])) {
 				$result['base']= self::BASE_UPLOADS; // upload based
